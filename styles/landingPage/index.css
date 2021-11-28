@@ -1,0 +1,191 @@
+/*
+
+HEADER STYLES
+
+*/
+
+.header--landingPage{
+
+    height: 450px;
+
+    display: grid;
+
+    grid-template-rows: 30px 1fr 1fr 50px;
+    grid-template-columns: 70px 1fr 1fr 40px;
+
+    grid-template-areas: 
+
+        ". . . ."
+        ". . nav ."
+        ". h1 . ."
+        ". . . ."
+    
+    ;
+
+    background-color: #E95714;
+
+    color: white;
+
+}
+
+header nav{
+
+    grid-area: nav;
+
+    justify-self: right;
+
+    height: 50px;
+
+}
+
+nav ul{
+
+    height: 50px;
+    width: 550px;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+
+    list-style: none;
+
+}
+
+ul a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+.ul__li--registerlogin{
+
+    height: 50px;
+    width: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFB703;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+
+}
+
+header h1{
+
+    grid-area: h1;
+
+    align-self: flex-end;
+
+    font-family: Comfortaa;
+    font-size: 55pt;
+
+}
+
+header h1 span{
+
+    font-family: KeepCalm;
+    font-size: 55pt;
+
+}
+
+/*
+
+MAIN STYLES
+
+*/
+
+main{
+
+    height: 400px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E9ECEF;
+
+}
+
+main section{
+
+    display: grid;
+
+    width: 90%;
+
+    grid-template-rows: 35px 50px 20px 70px 70px 35px;
+    grid-template-columns: 5% 1fr 1fr 5%;
+
+    grid-template-areas: 
+    
+        ". . . ."
+        ". h2 h2 ."
+        ". hr hr ."
+        ". p p ."
+        ". ul ul ."
+        ". . . ."
+
+    ;
+
+    background-color: white;
+
+}
+
+main section h2{
+
+    grid-area: h2;
+
+    align-self: center;
+
+    font-family: Comfortaa;
+    font-size: 16pt;
+    font-weight: bolder;
+
+    color: #023047ff;
+
+}
+
+section hr{
+
+    height: 2px;
+
+    grid-area: hr;
+
+    align-self: center;
+
+    background-color: #023047ff;
+    border: none;
+
+}
+
+section p{
+
+    grid-area: p;
+
+    align-self: center;
+
+}
+
+section ul{
+
+    grid-area: ul;
+
+    margin-left: 50px;
+
+    align-self: center;
+
+}
+
+section ul li{
+
+    margin-bottom: 10px;
+
+}

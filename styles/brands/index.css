@@ -1,0 +1,113 @@
+thead tr{
+
+    display: grid;
+
+    grid-template-rows: 40px;
+    grid-template-columns: 1fr 2fr 4fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    
+        "th1 th2 th3 th4 th5 th6"
+
+    ;
+
+}
+
+tbody tr{
+
+    display: grid;
+
+    grid-template-rows: 130px;
+    grid-template-columns: 1fr 2fr 4fr 1fr 1fr 1fr;
+
+    align-items: center;
+
+    grid-template-areas: 
+    
+        "td1 td2 td3 td4 td5 td6"
+
+    ;
+
+}
+
+.td1{
+
+    grid-area: td1;
+
+    color: #023047ff;
+
+}
+
+.td2{
+
+    grid-area: td2;
+
+    color: #023047ff;
+
+}
+
+.td3{
+
+    grid-area: td3;
+
+}
+
+.td4{
+
+    grid-area: td4;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 70%;
+    height: 30px;
+    
+    background-color: #219ebcff;
+
+    border-radius: 15px;
+
+    color: white;
+
+}
+
+.td5{
+
+    grid-area: td5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 70%;
+    height: 30px;
+    
+    background-color: #ffb703ff;
+
+    border-radius: 15px;
+
+    color: white;
+
+}
+
+.td6{
+
+    grid-area: td6;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 70%;
+    height: 30px;
+    
+    background-color: #d62828ff;
+
+    border-radius: 15px;
+
+    color: white;
+
+}

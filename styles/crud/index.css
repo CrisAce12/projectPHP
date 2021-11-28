@@ -1,0 +1,146 @@
+/*
+
+MAIN STYLES
+
+*/
+
+main{
+
+    min-height: 900px;
+
+    background-color: #E9ECEF;
+
+}
+
+main section{
+
+    display: grid;
+
+    grid-template-rows: 80px 80px 60px 1fr 80px;
+    grid-template-columns: 5% 1fr 5%;
+
+    grid-template-areas: 
+    
+        ". . ."
+        ". h1 ."
+        ". h2 ."
+        ". table ."
+        ". . ."
+
+    ;
+
+}
+
+section h1{
+
+    grid-area: h1;
+
+    font-family: KeepCalm;
+    font-weight: lighter;
+    font-size: 40pt;
+
+    color: #e95714ff;
+
+}
+
+section h1 span{
+
+    font-size: 40pt;
+
+    color: #023047ff;
+
+}
+
+section h2{
+
+    grid-area: h2;
+
+}
+
+section h2 a{
+
+    grid-area: h2;
+
+    font-size: 14pt;
+
+    text-decoration: none;
+
+    color: #023047ff;
+
+}
+
+section table{
+
+    grid-area: table;
+
+    display: flex;
+    
+    flex-direction: column;
+
+}
+
+thead th{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e95714ff;
+
+    color: white;
+
+}
+
+.th1{
+
+    grid-area: th1;
+
+    background-color: #023047ff;
+
+}
+
+.th2{
+
+    grid-area: th2;
+
+}
+
+.th3{
+
+    grid-area: th3;
+
+}
+
+.th4{
+
+    grid-area: th4;
+
+}
+
+.th5{
+
+    grid-area: th5;
+
+}
+
+.th6{
+
+    grid-area: th6;
+
+}
+
+tbody{
+
+    background-color: white;
+
+}
+
+tr td{
+
+    justify-self: center;
+    
+    padding: 10px;
+
+}
+

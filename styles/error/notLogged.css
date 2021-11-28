@@ -1,0 +1,65 @@
+main{
+
+    min-height: 900px;
+
+    display: flex;
+
+    justify-content: center;
+
+    background-color: #E9ECEF;
+
+}
+
+main section{
+
+    width: 30%;
+
+    display: grid;
+
+    grid-template-rows: 80px 80px;
+    grid-template-columns: 1fr;
+
+    align-self: baseline;
+
+    align-items: center;
+    text-align: center;
+
+    grid-template-areas: 
+    
+        "h1"
+        "h2"
+    
+    ;
+
+    margin-top: 50px;
+    padding: 20px;
+
+    background-color: white;
+
+}
+
+section h1{
+
+    grid-area: h1;
+
+    font-family: KeepCalm;
+    font-weight: lighter;
+    font-size: 28pt;
+
+    color: #023047ff;
+
+    align-self: flex-end;
+
+}
+
+section h2{
+
+    grid-area: h2;
+
+}
+
+section h2 a{
+
+    color: #023047ff;    
+
+}

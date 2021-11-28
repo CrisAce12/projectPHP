@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Cream;
+    src: url(/fonts/cream-DEMO.ttf);
+
+    font-family: Comfortaa;
+    src: url(/fonts/Comfortaa-Regular.ttf);
+
+    font-family: BoldFont;
+    src: url(/fonts/BebasNeue-Regular.ttf);
+
+    font-family: KeepCalm;
+    src: url(/fonts/KeepCalm-Medium.ttf);
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+    font-family: comfortaa;
+    font-size: 12pt;
+
+}
+
+header{
+
+    height: 80px;
+
+    display: grid;
+
+    grid-template-rows: 10px 1fr 10px;
+    grid-template-columns: 30px 1fr 1fr 30px;
+
+    grid-template-areas: 
+
+        ". . . ."
+        ". p nav ."
+        ". . . ."
+    
+    ;
+
+    background-color: #e95714ff;
+
+    color: white;
+
+}
+
+header p{
+
+    align-self: center;
+    justify-self: left;
+
+    grid-area: p;
+
+    font-size: 20pt;
+
+}
+
+header p span{
+
+    font-family: KeepCalm;
+    font-size: 20pt;
+
+}
+
+.nav{
+
+    grid-area: nav;
+
+    align-self: center;
+    justify-self: right;
+
+    height: 50px;
+
+}
+
+nav ul{
+
+    height: 50px;
+    width: 550px;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+
+    list-style: none;
+
+}
+
+ul a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+.ul__li--registerlogin{
+
+    height: 50px;
+    width: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFB703;
+
+    font-weight: bolder;
+
+    border-radius: 20px;
+
+}
+
+footer{
+
+    height: 75px;
+
+    background-color: #023047ff;
+
+    color: white;
+
+}
+
+footer section{
+
+    height: 75px;
+
+    display: flex;
+
+    padding: 0 30px;
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer section h2{
+
+    color: white;
+
+}
+
+footer section span{
+
+    color: white;
+
+}
+
+footer section p a{
+
+    color: white;
+
+}
