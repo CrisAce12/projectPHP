@@ -1,0 +1,222 @@
+main section{
+
+    min-height: 700px;
+
+    display: grid;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 60% 40%;
+
+    background-color: #E9ECEF;
+
+}
+
+section form{
+
+    height: 600px;
+
+    align-self: center;
+    justify-self: center;
+
+    background-color: white;
+
+}
+
+.form--register{
+
+    display: grid;
+
+    width: 90%;
+
+    grid-template-rows: 10% 2fr repeat(4, 1fr) 1.5fr 10%;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    
+    grid-template-areas: 
+    
+    ". . . ."
+    ". h1 h1 ."
+    ". label1 label2 ."
+    ". input1 input2 ."
+    ". label3 label4 ."
+    ". input3 input4 ."
+    ". button button ."
+    ". . . ."
+
+    ;
+
+}
+
+form h1{
+
+    grid-area: h1;
+
+    align-self: center;
+
+    font-family: KeepCalm;
+    font-weight: lighter;
+    font-size: 35pt;
+
+    color: #e95714ff;
+
+}
+
+form h1 span{
+
+    font-size: 35pt;
+
+    color: #023047ff;
+
+}
+
+form label{
+
+    width: 90%;
+
+    padding: 10px;
+
+    align-self: flex-end;
+
+    color: white;
+
+    background-color: #023047ff;
+    border: 1px solid #023047ff;
+
+}
+
+form input{
+
+    width: 90%;
+
+    padding: 10px;
+
+    align-self: flex-start;
+
+    color: #023047ff;
+
+    border: 1px solid #023047ff;
+
+}
+
+
+.label1{
+
+    grid-area: label1;
+
+}
+
+.label2{
+
+    grid-area: label2;
+
+}
+
+.label3{
+
+    grid-area: label3;
+
+}
+
+.label4{
+
+    grid-area: label4;
+
+}
+
+.input1{
+
+    grid-area: input1;
+
+}
+
+.input2{
+
+    grid-area: input2;
+
+}
+
+.input3{
+
+    grid-area: input3;
+
+}
+
+.input4{
+
+    grid-area: input4;
+
+}
+
+.input5{
+
+    grid-area: input5;
+
+    align-self: center;
+
+}
+
+form button{
+
+    grid-area: button;
+
+    width: 50%;
+    height: 50px;
+
+    align-self: center;
+    justify-self: center;
+
+    background-color: #e95714ff;
+
+    color: white;
+
+    border: none;
+
+}
+
+.form--login{
+
+    display: grid;
+
+    width: 70%;
+
+    grid-template-rows: 10% 2fr repeat(4, 1fr) 1.5fr 10%;
+    grid-template-columns: 10% 1fr 10%;
+    
+    grid-template-areas: 
+    
+    ". . ."
+    ". h1 ."
+    ". label1 ."
+    ". input1 ."
+    ". label2 ."
+    ". input2 ."
+    ". button ."
+    ". . ."
+
+    ;
+
+}
+
+.form--login h1{
+
+    justify-self: center;
+
+}
+
+
+.form--login label{
+
+    justify-self: center;
+
+}
+
+.form--login input{
+
+    justify-self: center;
+
+}
+
+.form--login button{
+
+    grid-area: button;
+
+}

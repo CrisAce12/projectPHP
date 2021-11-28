@@ -34,7 +34,7 @@ header{
     grid-template-areas: 
 
         ". . . ."
-        ". p nav ."
+        ". a nav ."
         ". . . ."
     
     ;
@@ -45,18 +45,26 @@ header{
 
 }
 
-header p{
+header a{
+
+    grid-area: a;
 
     align-self: center;
     justify-self: left;
 
-    grid-area: p;
+    text-decoration: none;
+
+    color: white;
+
+}
+
+header a p{
 
     font-size: 20pt;
 
 }
 
-header p span{
+header a p span{
 
     font-family: KeepCalm;
     font-size: 20pt;
@@ -96,7 +104,7 @@ ul a{
 
 }
 
-.ul__li--registerlogin{
+.ul__li--register{
 
     height: 50px;
     width: 130px;
@@ -107,6 +115,24 @@ ul a{
     justify-content: center;
 
     background-color: #FFB703;
+
+    font-weight: bolder;
+
+    border-radius: 20px;
+
+}
+
+.ul__li--logout{
+
+    height: 50px;
+    width: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #023047ff;
 
     font-weight: bolder;
 
